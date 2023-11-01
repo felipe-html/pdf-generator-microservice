@@ -5,14 +5,9 @@ const puppeteer = require('puppeteer');
 const router = express.Router();
 
 router.post('/service-report', async (req, res) => {
-    const { name } = req.body;
-
-    if (!name) {
-        return res.status(400).json({ message: "Param 'name' is required." });
-    }
 
     const pathFile = path.join(__dirname, "/model.ejs")
-    const data = { name }
+    const data = { }
 
     const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
@@ -23,11 +18,11 @@ router.post('/service-report', async (req, res) => {
                 message: "An error occurred while generating the file from the received data."
             })
         }
-
         await page.setContent(html);
         const pdf = await page.pdf({
-            format: "A4",
-            path: "file.pdf"
+            printBackground: true,
+            height: "828px",
+            width: "1280px",
         })
 
         await page.close()
