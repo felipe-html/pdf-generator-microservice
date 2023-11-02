@@ -1,66 +1,62 @@
 const express = require('express');
 const ejs = require('ejs');
 const path = require('path');
-var puppeteer;
-const chrome = {}
+var puppeteer = require('puppeteer')
 
-if(process.env.AWS_LAMBDA_FUNCTION_VERSION) {
-    puppeteer = require('puppeteer-core');
-    chrome = require("chrome-aws-lambda")
-} else {
-    puppeteer = require('puppeteer');
-}
+const data = {
+    establishmentName: "Estabelecimento batata",
+    workersTotalNumber: 1230,
+    totalSampleSize: 630,
+    answersTotalNumber: 400,
+    drUfName: "Mato Grosso",
+    answerData: {
+      demographic: {
+        sex: {
+          woman: 50,
+          man: 50,
+        },
+        age: {
+          lessThan18: "",
+        },
+      },
+    },
+};
+  
 
 const router = express.Router();
 
-router.get('/service-report', async (req, res) => {
-    return res.send({message: "success"})
-    // let options = {};
+router.post('/service-report', async (req, res) => {
+    const browser = await puppeteer.launch({
+        headless: "new",
+      });
 
-    // if(process.env.AWS_LAMBDA_FUNCTION_VERSION) {
-    //     options = {
-    //         args: [...chrome.args,"--hide-scrollbars", "disable-web-security"],
-    //         defaultViewport: chrome.defaultViewport,
-    //         executablePath: await chrome.executablePath,
-    //         headless: true,
-    //         ignoreHTTPSErrors: true
-    //     }
-    // }
+      const page = await browser.newPage();
 
-    // try {
-    //     const browser = await puppeteer.launch(options)
-    //     const page = await browser.newPage()
-    //     await page.goto("https://www.google.com")
-    //     return res.send(await page.title())
-    // } catch(error) {
-    //     return res.send(error)
-    // }   
-    // const pathFile = path.join(__dirname, "/model.ejs")
-    // const data = { }
+      const filePath = path.join(
+        __dirname,
+        "model.ejs",
+      );
+      
+      ejs.renderFile(filePath, { data }, async (error, html) => {
+        if (error) {
+          return res.status(500).json({
+            message: "There was an error generating the ejs file",
+            timeStamp: new Date(),
+            error,
+          });
+        }
 
-    // const browser = await puppeteer.launch({ headless: "new" });
-    // const page = await browser.newPage();
+        await page.setContent(html);
+        const pdf = await page.pdf({
+          printBackground: true,
+          height: "828px",
+          width: "1280px",
+        });
 
-    // ejs.renderFile(pathFile, { data }, async (error, html) => {
-    //     if (error) {
-    //         return res.status(500).json({
-    //             message: "An error occurred while generating the file from the received data."
-    //         })
-    //     }
-    //     await page.setContent(html);
-    //     const pdf = await page.pdf({
-    //         printBackground: true,
-    //         height: "828px",
-    //         width: "1280px",
-    //     })
-
-    //     await page.close()
-    //     return res.status(201).json({
-    //         status: 201,
-    //         message: "PDF was generated successfuly!",
-    //         file: pdf
-    //     })
-    // })
+        await browser.close();
+        console.log("Pdf was generated successfully!")
+        return res.status(200).json({ pdf });
+    })
 })
 
 module.exports = router
