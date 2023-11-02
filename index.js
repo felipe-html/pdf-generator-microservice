@@ -10,5 +10,5 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use('/assti', assti)
 app.listen(3003, () => {
-    console.log("Server started on http://localhost:3002");
+    console.log("Server started on http://localhost:3003/assti/service-report");
 })

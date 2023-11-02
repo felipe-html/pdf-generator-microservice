@@ -14,26 +14,27 @@ if(process.env.AWS_LAMBDA_FUNCTION_VERSION) {
 const router = express.Router();
 
 router.get('/service-report', async (req, res) => {
-    let options = {};
+    return res.send({message: "success"})
+    // let options = {};
 
-    if(process.env.AWS_LAMBDA_FUNCTION_VERSION) {
-        options = {
-            args: [...chrome.args,"--hide-scrollbars", "disable-web-security"],
-            defaultViewport: chrome.defaultViewport,
-            executablePath: await chrome.executablePath,
-            headless: true,
-            ignoreHTTPSErrors: true
-        }
-    }
+    // if(process.env.AWS_LAMBDA_FUNCTION_VERSION) {
+    //     options = {
+    //         args: [...chrome.args,"--hide-scrollbars", "disable-web-security"],
+    //         defaultViewport: chrome.defaultViewport,
+    //         executablePath: await chrome.executablePath,
+    //         headless: true,
+    //         ignoreHTTPSErrors: true
+    //     }
+    // }
 
-    try {
-        const browser = await puppeteer.launch(options)
-        const page = await browser.newPage()
-        await page.goto("https://www.google.com")
-        return res.send(await page.title())
-    } catch(error) {
-        return res.send(error)
-    }   
+    // try {
+    //     const browser = await puppeteer.launch(options)
+    //     const page = await browser.newPage()
+    //     await page.goto("https://www.google.com")
+    //     return res.send(await page.title())
+    // } catch(error) {
+    //     return res.send(error)
+    // }   
     // const pathFile = path.join(__dirname, "/model.ejs")
     // const data = { }
 
