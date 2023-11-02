@@ -9,6 +9,6 @@ const assti = require('./routes/service-report/service-report')
 app.use(bodyParser.json())
 app.use(cors())
 app.use('/assti', assti)
-app.listen(3002, () => {
+app.listen(3003, () => {
     console.log("Server started on http://localhost:3002");
 })

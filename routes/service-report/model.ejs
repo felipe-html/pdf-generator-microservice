@@ -15,8 +15,9 @@
     />
 
     <!-- <link rel="stylesheet" href="style.css" /> -->
-    <style>
-      * {
+
+  <style>
+    * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,7 +28,7 @@
 .container {
   width: 1920px;
   height: 1240px;
-  /* display: flex; */
+  margin-bottom: 5px;
   page-break-after: auto;
   page-break-before: auto;
 }
@@ -193,6 +194,7 @@
 /* Page Demographic styles */
 
 .page-demographic {
+  display: flex;
   position: relative;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-4-background.png");
 }
@@ -200,6 +202,7 @@
 /* Page Demographic 1 styles */
 
 .page-demographic-1 {
+  display: flex;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-5-background.png");
   align-items: flex-start;
   position: relative;
@@ -462,6 +465,7 @@
 
 /* Page Demographic 2 styles */
 .page-demographic-2 {
+  display: flex;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-demographic-2.png");
   align-items: flex-start;
   position: relative;
@@ -543,6 +547,7 @@
 /* Page Demographic 3 styles */
 
 .page-demographic-3 {
+  display: flex;
   align-items: flex-start;
   position: relative;
 }
@@ -835,6 +840,7 @@
 
 /* Page behavior factors*/
 .page-behavior-factors {
+  display: flex;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-behavioral-factors.png");
   position: relative;
   align-items: flex-start;
@@ -842,6 +848,7 @@
 
 /* Page behavioral */
 .page-behavioral-factors-1 {
+  display: flex;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-behavioral-factors-1.png");
   align-items: flex-start;
   position: relative;
@@ -967,6 +974,7 @@
 /* Page Behavior Factors 2 styles */
 
 .page-behavior-factors-2 {
+  display: flex;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/behavior-factors-2.png.png");
   align-items: flex-start;
   position: relative;
@@ -1028,6 +1036,7 @@
 /* Page behavior factors 3 styles */
 
 .page-behavior-factors-3 {
+  display: flex;
   align-items: flex-start;
   position: relative;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-11-background.png");
@@ -1094,7 +1103,6 @@
   align-items: flex-start;
   font-size: 24px;
   color: #202020;
-  /* gap: 21px; */
   display: flex;
   justify-content: space-between;
   width: 45%;
@@ -1112,6 +1120,7 @@
 /* Behavior factors 4 styles*/
 
 .page-behavior-factors-4 {
+  display: flex;
   position: relative;
   align-items: flex-start;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-12-background.png");
@@ -1175,6 +1184,7 @@
 /* Behavior factors 5 styles*/
 
 .page-behavior-factors-5 {
+  display: flex;
   position: relative;
   align-items: flex-start;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-13-background.png");
@@ -1253,6 +1263,8 @@
 /* Behavior factors 6 styles*/
 
 .page-behavior-factors-6 {
+  /* page-break-after: always; */
+  display: flex;
   position: relative;
   align-items: flex-start;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-15-background.png");
@@ -1364,6 +1376,7 @@
 
 /* Psychosocial styles */
 .page-psychosocial-factors {
+  display: flex;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-psychosocial-factors.png");
   align-items: flex-start;
   position: relative;
@@ -1707,11 +1720,13 @@
 
 /* Page Morbidity styles */
 .page-morbidity {
+  display: flex;
   position: relative;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/morbidity-page-1.png");
 }
 
 .page-morbidity-1 {
+  display: flex;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/morbidity-page-2.png");
   align-items: flex-start;
   position: relative;
@@ -1765,10 +1780,12 @@
   font-weight: 700;
 }
 
+/* Page Morvidity 2  styles*/
 .page-morbidity-2 {
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/morbidity-page-3.png");
   align-items: flex-start;
   position: relative;
+  display: flex;
 }
 
 .page-morbidity-2-table-container {
@@ -1845,21 +1862,492 @@
 }
 
 /* páginas do mauricio */
-/* páginas do daniel*/
+/* Page Productivity styles */
+
+.page-productivity {
+  display: flex;
+  position: relative;
+  background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-productivity-1.png");
+}
+
+.page-productivity-2 {
+  display: flex;
+  background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-productivity-2.png");
+  align-items: flex-start;
+  position: relative;
+}
+
+.page-productivity-2-healthy-graphic-wrapper {
+  position: absolute;
+  top: 219px;
+  left: 246px;
+  height: 411px;
+  width: 619px;
+}
+
+.page-productivity-2-healthy-graphic-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 619px;
+  text-align: center;
+}
+
+.page-productivity-2-healthy-graphic-wrapper > div h1 {
+  font-size: 32px;
+  color: #202020;
+  line-height: 43.45px;
+}
+
+.page-productivity-2-healthy-graphic-wrapper > div p {
+  color: #606060;
+  font-size: 18.62px;
+  line-height: 26.07px;
+  margin-top: 20px;
+  margin-bottom: 42px;
+}
+
+.page-productivity-2-healthy-graphic-container {
+  width: 619px;
+  display: flex;
+  height: 248px;
+  gap: 22px;
+}
+
+.page-productivity-2-healthy-graphic {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
+  gap: 24px;
+}
+
+.page-productivity-2-healthy-graphic-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 140px;
+  height: 140px;
+  gap: 24px;
+  color: #606060;
+  font-size: 22px;
+  text-align: center;
+}
+
+.page-productivity-2-healthy-graphic-column {
+  display: flex;
+  align-items: flex-end;
+  width: 140px;
+  height: 300px;
+}
+
+.page-productivity-2-healthy-graphic-column div {
+  display: flex;
+  width: 100%;
+  height: var(--percent);
+  border-radius: 8px;
+  background-color: #f4a64c;
+}
+
+.page-productivity-2-healthy-graphic-description span {
+  font-size: 24.83px;
+  font-weight: 700;
+  color: #202020;
+}
+
+.page-productivity-2-healthy-graphic-description p {
+  white-space: nowrap;
+  font-size: 17.07px;
+  color: #606060;
+}
+
+.page-productivity-2-not-go-work-graphic-wrapper {
+  position: absolute;
+  top: 219px;
+  left: 1035px;
+  height: 411px;
+  width: 619px;
+}
+
+.page-productivity-2-not-go-work-graphic-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 619px;
+  text-align: center;
+}
+
+.page-productivity-2-not-go-work-graphic-wrapper > div h1 {
+  font-size: 32px;
+  color: #202020;
+  line-height: 43.45px;
+}
+
+.page-productivity-2-not-go-work-graphic-wrapper > div p {
+  color: #606060;
+  font-size: 18.62px;
+  line-height: 26.07px;
+  margin-top: 20px;
+  margin-bottom: 42px;
+}
+
+.page-productivity-2-not-go-work-graphic-container {
+  width: 619px;
+  display: flex;
+  height: 248px;
+  gap: 22px;
+}
+
+.page-productivity-2-not-go-work-graphic {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
+  gap: 24px;
+}
+
+.page-productivity-2-not-go-work-graphic-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 140px;
+  height: 140px;
+  gap: 24px;
+  color: #606060;
+  font-size: 22px;
+  text-align: center;
+}
+
+.page-productivity-2-not-go-work-graphic-column {
+  display: flex;
+  align-items: flex-end;
+  width: 140px;
+  height: 300px;
+}
+
+.page-productivity-2-not-go-work-graphic-column div {
+  display: flex;
+  width: 100%;
+  height: var(--percent);
+  border-radius: 8px;
+  background-color: #233a69;
+}
+
+.page-productivity-2-not-go-work-graphic-description span {
+  font-size: 24.83px;
+  font-weight: 700;
+  color: #202020;
+}
+
+.page-productivity-2-not-go-work-graphic-description p {
+  white-space: nowrap;
+  font-size: 17.07px;
+  color: #606060;
+}
+
+.page-productivity-2-no-energy-wrapper {
+  position: absolute;
+  top: 681px;
+  left: 246px;
+  height: 411px;
+  width: 619px;
+}
+
+.page-productivity-2-no-energy-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 619px;
+  text-align: center;
+}
+
+.page-productivity-2-no-energy-wrapper > div h1 {
+  font-size: 32px;
+  color: #202020;
+  line-height: 43.45px;
+}
+
+.page-productivity-2-no-energy-wrapper > div p {
+  color: #606060;
+  font-size: 18.62px;
+  line-height: 26.07px;
+  margin-top: 20px;
+  margin-bottom: 42px;
+}
+
+.page-productivity-2-no-energy-container {
+  width: 619px;
+  display: flex;
+  height: 248px;
+  gap: 22px;
+}
+
+.page-productivity-2-no-energy {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
+  gap: 24px;
+}
+
+.page-productivity-2-no-energy-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 140px;
+  height: 140px;
+  gap: 24px;
+  color: #606060;
+  font-size: 22px;
+  text-align: center;
+}
+
+.page-productivity-2-no-energy-column {
+  display: flex;
+  align-items: flex-end;
+  width: 140px;
+  height: 300px;
+}
+
+.page-productivity-2-no-energy-column div {
+  display: flex;
+  width: 100%;
+  height: var(--percent);
+  border-radius: 8px;
+  background-color: #72d0f3;
+}
+
+.page-productivity-2-no-energy-description span {
+  font-size: 24.83px;
+  font-weight: 700;
+  color: #202020;
+}
+
+.page-productivity-2-no-energy-description p {
+  white-space: nowrap;
+  font-size: 17.07px;
+  color: #606060;
+}
+
+.page-productivity-2-concentrate-wrapper {
+  position: absolute;
+  top: 681px;
+  left: 1035px;
+  height: 411px;
+  width: 619px;
+}
+
+.page-productivity-2-concentrate-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 619px;
+  text-align: center;
+}
+
+.page-productivity-2-concentrate-wrapper > div h1 {
+  font-size: 32px;
+  color: #202020;
+  line-height: 43.45px;
+}
+
+.page-productivity-2-concentrate-wrapper > div p {
+  color: #606060;
+  font-size: 18.62px;
+  line-height: 26.07px;
+  margin-top: 20px;
+  margin-bottom: 42px;
+}
+
+.page-productivity-2-concentrate-container {
+  width: 619px;
+  display: flex;
+  height: 248px;
+  gap: 22px;
+}
+
+.page-productivity-2-concentrate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
+  gap: 24px;
+}
+
+.page-productivity-2-concentrate-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 140px;
+  height: 140px;
+  gap: 24px;
+  color: #606060;
+  font-size: 22px;
+  text-align: center;
+}
+
+.page-productivity-2-concentrate-column {
+  display: flex;
+  align-items: flex-end;
+  width: 140px;
+  height: 300px;
+}
+
+.page-productivity-2-concentrate-column div {
+  display: flex;
+  width: 100%;
+  height: var(--percent);
+  border-radius: 8px;
+  background-color: #8dd4dd;
+}
+
+.page-productivity-2-concentrate-description span {
+  font-size: 24.83px;
+  font-weight: 700;
+  color: #202020;
+}
+
+.page-productivity-2-concentrate-description p {
+  white-space: nowrap;
+  font-size: 17.07px;
+  color: #606060;
+}
+
+.page-productivity-3 {
+  display: flex;
+  background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-productivity-3.png");
+  align-items: flex-start;
+  position: relative;
+}
+
+.page-productivity-3-graphic-wrapper {
+  position: absolute;
+  top: 575px;
+  left: 1080px;
+  height: 706px;
+  width: 619px;
+}
+
+.page-productivity-3-graphic-container {
+  width: 619px;
+  display: flex;
+  height: 350px;
+  gap: 22px;
+}
+
+.page-productivity-3-graphic {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
+  gap: 24px;
+}
+
+.page-productivity-3-graphic-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 140px;
+  height: 140px;
+  gap: 24px;
+  color: #606060;
+  font-size: 22px;
+  text-align: center;
+}
+
+.page-productivity-3-graphic-column {
+  display: flex;
+  align-items: flex-end;
+  width: 140px;
+  height: 300px;
+}
+
+.page-productivity-3-graphic-column div {
+  display: flex;
+  width: 100%;
+  height: var(--percent);
+  border-radius: 8px;
+  background-color: #72d0f3;
+}
+
+.page-productivity-3-graphic-description span {
+  font-size: 24.83px;
+  font-weight: 700;
+  color: #202020;
+}
+
+.page-productivity-3-graphic-description p {
+  white-space: nowrap;
+  font-size: 17.07px;
+  color: #606060;
+}
+
+.page-productivity-4 {
+  display: flex;
+  background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-productivity-4.png");
+  align-items: flex-start;
+  position: relative;
+}
+
+.page-productivity-4-gauger-wrapper {
+  position: absolute;
+  top: 289px;
+  left: 1139px;
+}
+
+.page-productivity-4-percent-wrapper {
+  position: absolute;
+  top: 715px;
+  left: 1241px;
+  text-align: center;
+}
+
+.page-productivity-4-percent-wrapper p {
+  font-size: 32px;
+  font-weight: 700;
+  color: #202020;
+  line-height: 44.8px;
+}
+
+.page-productivity-4-percent-wrapper h1 {
+  font-size: 132px;
+  font-weight: 800;
+  color: #202020;
+  line-height: 140px;
+}
+
+.page-productivity-4-national-average-wrapper {
+  position: absolute;
+  top: 947px;
+  left: 1286px;
+}
+
+.page-productivity-4-national-average-wrapper span {
+  font-size: 32px;
+  font-weight: 600;
+}
 
 /* safety culture 1 styles*/
 
 .page-safety-culture-1 {
+  display: flex;
   position: relative;
   align-items: flex-start;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-30-background.png");
   background-position-x: 0;
-  background-position-y: 0; 
+  background-position-y: 0;
 }
 
 /* safety culture 2 styles */
 
 .page-safety-culture-2 {
+  display: flex;
   position: relative;
   align-items: flex-start;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-31-background.png");
@@ -1899,6 +2387,7 @@
 /* safety culture 3 styles */
 
 .page-safety-culture-3 {
+  display: flex;
   position: relative;
   align-items: flex-start;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-32-background.png");
@@ -1941,6 +2430,7 @@
 /* safety culture 4 styles */
 
 .page-safety-culture-4 {
+  display: flex;
   position: relative;
   align-items: flex-start;
   background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-33-background.png");
@@ -1980,8 +2470,85 @@
   color: #e8ba38;
 }
 
-    </style>
-    
+/* Page safety culture 5 styles*/
+
+.page-safety-culture-5 {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-34-background.png");
+}
+
+.page-safety-culture-5-gauger-wrapper {
+  position: absolute;
+  top: 269px;
+  left: 1139px;
+}
+
+.page-safety-culture-5-percent-wrapper {
+  position: absolute;
+  bottom: 372px;
+  left: 1245px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 259px;
+}
+
+.page-safety-culture-5-percent-wrapper p {
+  font-size: 32px;
+  font-weight: 700;
+  color: #202020;
+  line-height: 44.8px;
+}
+
+.page-safety-culture-5-percent-wrapper h1 {
+  font-size: 132px;
+  font-weight: 800;
+  color: #202020;
+  line-height: 140px;
+}
+
+.page-safety-culture-5-national-average-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 925px;
+  left: 1283px;
+}
+
+.page-safety-culture-5-national-average-wrapper span {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* Page final styles */
+
+.page-final {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  background-image: url("https://raw.githubusercontent.com/felipe-html/sesi-images/main/page-35-background.png");
+}
+
+.page-final-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 719px;
+  left: 703px;
+  text-align: center;
+  font-size: 24px;
+  gap: 10px;
+}
+
+  </style>
+
   </head>
 
   <body>
@@ -3447,7 +4014,411 @@
       </section>
 
       <!-- Páginas do Maurício-->
-      <!-- Páginas do Daniel-->
+
+      <section id="page-productivity" class="container page-productivity">
+        <footer class="footer">
+          <article class="footer-page-logo">
+            <img src="https://raw.githubusercontent.com/felipe-html/sesi-images/main/sesi-logo-white.png" />
+          </article>
+          <article class="footer-page-number" style="--color: #fff">
+            <span>26</span>
+          </article>
+        </footer>
+      </section>
+  
+      <section class="container page-productivity-2">
+        <header class="header">
+          <nav>
+            <a href="#page-demographic">
+              <span>01.</span>
+              <p>Demográfica</p>
+            </a>
+            <a>
+              <span>02.</span>
+              <p>Fatores comportamentais</p>
+            </a>
+            <a>
+              <span>03.</span>
+              <p>Fatores psicossociais</p>
+            </a>
+            <a>
+              <span>04.</span>
+              <p>Morbidade</p>
+            </a>
+            <a>
+              <span>05.</span>
+              <p>Percepção de saúde e autocuidado</p>
+            </a>
+            <a class="header-active">
+              <span>06.</span>
+              <p>Produtividade</p>
+            </a>
+            <a>
+              <span>07.</span>
+              <p>Cultura de segurança</p>
+            </a>
+          </nav>
+        </header>
+  
+        <article class="page-productivity-2-healthy-graphic-wrapper">
+          <div>
+            <h1>Faltas por motivo de saúde</h1>
+            <p>Nos últimos 30 dias, em quantos dias você precisou faltar ao trabalho por motivos de saúde (com ou sem
+              licença médica ou atestado)?</p>
+  
+            <div class="page-productivity-2-healthy-graphic-container">
+              <div class="page-productivity-2-healthy-graphic">
+                <div class="page-productivity-2-healthy-graphic-column">
+                  <div style="--percent: 100%"></div>
+                </div>
+                <div class="page-productivity-2-healthy-graphic-description">
+                  <span>100%</span>
+                  <p>Nunca</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-healthy-graphic">
+                <div class="page-productivity-2-healthy-graphic-column">
+                  <div style="--percent: 80%"></div>
+                </div>
+                <div class="page-productivity-2-healthy-graphic-description">
+                  <span>80%</span>
+                  <p>1 a 2 dias</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-healthy-graphic">
+                <div class="page-productivity-2-healthy-graphic-column">
+                  <div style="--percent: 30%"></div>
+                </div>
+                <div class="page-productivity-2-healthy-graphic-description">
+                  <span>30%</span>
+                  <p>3 a 7 dias</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-healthy-graphic">
+                <div class="page-productivity-2-healthy-graphic-column">
+                  <div style="--percent: 10%"></div>
+                </div>
+                <div class="page-productivity-2-healthy-graphic-description">
+                  <span>10%</span>
+                  <p>8 dias ou mais</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+  
+        <article class="page-productivity-2-not-go-work-graphic-wrapper">
+          <div>
+            <h1>Falta de vontade de ir ao trabalho</h1>
+            <p>
+              Nos últimos 30 dias, em quantos dias você não sentiu vontade de vir ao trabalho?
+            </p>
+  
+            <div class="page-productivity-2-not-go-work-graphic-container">
+              <div class="page-productivity-2-not-go-work-graphic">
+                <div class="page-productivity-2-not-go-work-graphic-column">
+                  <div style="--percent: 100%"></div>
+                </div>
+                <div class="page-productivity-2-not-go-work-graphic-description">
+                  <span>100%</span>
+                  <p>Nunca</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-not-go-work-graphic">
+                <div class="page-productivity-2-not-go-work-graphic-column">
+                  <div style="--percent: 80%"></div>
+                </div>
+                <div class="page-productivity-2-not-go-work-graphic-description">
+                  <span>80%</span>
+                  <p>1 a 2 dias</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-not-go-work-graphic">
+                <div class="page-productivity-2-not-go-work-graphic-column">
+                  <div style="--percent: 30%"></div>
+                </div>
+                <div class="page-productivity-2-not-go-work-graphic-description">
+                  <span>30%</span>
+                  <p>3 a 7 dias</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-not-go-work-graphic">
+                <div class="page-productivity-2-not-go-work-graphic-column">
+                  <div style="--percent: 10%"></div>
+                </div>
+                <div class="page-productivity-2-not-go-work-graphic-description">
+                  <span>10%</span>
+                  <p>8 dias ou mais</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+  
+        <article class="page-productivity-2-no-energy-wrapper">
+          <div>
+            <h1>Falta de disposição ou energia</h1>
+            <p>
+              Nos últimos 30 dias, em quantos dias você se sentiu indisposto ou sem ânimo (energia) para realizar tarefas
+              que o seu trabalho exige?
+            </p>
+  
+            <div class="page-productivity-2-no-energy-container">
+              <div class="page-productivity-2-no-energy">
+                <div class="page-productivity-2-no-energy-column">
+                  <div style="--percent: 100%"></div>
+                </div>
+                <div class="page-productivity-2-no-energy-description">
+                  <span>100%</span>
+                  <p>Nunca</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-no-energy">
+                <div class="page-productivity-2-no-energy-column">
+                  <div style="--percent: 80%"></div>
+                </div>
+                <div class="page-productivity-2-no-energy-description">
+                  <span>80%</span>
+                  <p>1 a 2 dias</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-no-energy">
+                <div class="page-productivity-2-no-energy-column">
+                  <div style="--percent: 30%"></div>
+                </div>
+                <div class="page-productivity-2-no-energy-description">
+                  <span>30%</span>
+                  <p>3 a 7 dias</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-no-energy">
+                <div class="page-productivity-2-no-energy-column">
+                  <div style="--percent: 10%"></div>
+                </div>
+                <div class="page-productivity-2-no-energy-description">
+                  <span>10%</span>
+                  <p>8 dias ou mais</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+  
+        <article class="page-productivity-2-concentrate-wrapper">
+          <div>
+            <h1>Dificuldade para se concentrar</h1>
+            <p>
+              Nos últimos 30 dias, em quantos dias você sentiu dificuldade para se concentrar no trabalho?
+            </p>
+  
+            <div class="page-productivity-2-concentrate-container">
+              <div class="page-productivity-2-concentrate">
+                <div class="page-productivity-2-concentrate-column">
+                  <div style="--percent: 100%"></div>
+                </div>
+                <div class="page-productivity-2-concentrate-description">
+                  <span>100%</span>
+                  <p>Nunca</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-concentrate">
+                <div class="page-productivity-2-concentrate-column">
+                  <div style="--percent: 80%"></div>
+                </div>
+                <div class="page-productivity-2-concentrate-description">
+                  <span>80%</span>
+                  <p>1 a 2 dias</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-concentrate">
+                <div class="page-productivity-2-concentrate-column">
+                  <div style="--percent: 30%"></div>
+                </div>
+                <div class="page-productivity-2-concentrate-description">
+                  <span>30%</span>
+                  <p>3 a 7 dias</p>
+                </div>
+              </div>
+  
+              <div class="page-productivity-2-concentrate">
+                <div class="page-productivity-2-concentrate-column">
+                  <div style="--percent: 10%"></div>
+                </div>
+                <div class="page-productivity-2-concentrate-description">
+                  <span>10%</span>
+                  <p>8 dias ou mais</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+  
+        <footer class="footer">
+          <article class="footer-page-logo">
+            <img src="https://raw.githubusercontent.com/felipe-html/sesi-images/main/sesi-logo.png" />
+          </article>
+          <article class="footer-page-number" style="--color: #4D6680">
+            <span>27</span>
+          </article>
+        </footer>
+      </section>
+  
+      <section class="container page-productivity-3">
+        <header class="header">
+          <nav>
+            <a href="#page-demographic">
+              <span>01.</span>
+              <p>Demográfica</p>
+            </a>
+            <a>
+              <span>02.</span>
+              <p>Fatores comportamentais</p>
+            </a>
+            <a>
+              <span>03.</span>
+              <p>Fatores psicossociais</p>
+            </a>
+            <a>
+              <span>04.</span>
+              <p>Morbidade</p>
+            </a>
+            <a>
+              <span>05.</span>
+              <p>Percepção de saúde e autocuidado</p>
+            </a>
+            <a class="header-active">
+              <span>06.</span>
+              <p>Produtividade</p>
+            </a>
+            <a>
+              <span>07.</span>
+              <p>Cultura de segurança</p>
+            </a>
+          </nav>
+        </header>
+  
+        <article class="page-productivity-3-graphic-wrapper">
+          <div class="page-productivity-3-graphic-container">
+            <div class="page-productivity-3-graphic">
+              <div class="page-productivity-3-graphic-column">
+                <div style="--percent: 100%"></div>
+              </div>
+              <div class="page-productivity-3-graphic-description">
+                <span>100%</span>
+                <p>Nunca</p>
+              </div>
+            </div>
+  
+            <div class="page-productivity-3-graphic">
+              <div class="page-productivity-3-graphic-column">
+                <div style="--percent: 80%"></div>
+              </div>
+              <div class="page-productivity-3-graphic-description">
+                <span>80%</span>
+                <p>1 a 2 dias</p>
+              </div>
+            </div>
+  
+            <div class="page-productivity-3-graphic">
+              <div class="page-productivity-3-graphic-column">
+                <div style="--percent: 30%"></div>
+              </div>
+              <div class="page-productivity-3-graphic-description">
+                <span>30%</span>
+                <p>3 a 7 dias</p>
+              </div>
+            </div>
+  
+            <div class="page-productivity-3-graphic">
+              <div class="page-productivity-3-graphic-column">
+                <div style="--percent: 10%"></div>
+              </div>
+              <div class="page-productivity-3-graphic-description">
+                <span>10%</span>
+                <p>8 dias ou mais</p>
+              </div>
+            </div>
+          </div>
+  
+        </article>
+  
+        <footer class="footer">
+          <article class="footer-page-logo">
+            <img src="https://raw.githubusercontent.com/felipe-html/sesi-images/main/sesi-logo.png" />
+          </article>
+          <article class="footer-page-number" style="--color: #4D6680">
+            <span>28</span>
+          </article>
+        </footer>
+      </section>
+  
+      <section class="container page-productivity-4">
+        <header class="header">
+          <nav>
+            <a href="#page-demographic">
+              <span>01.</span>
+              <p>Demográfica</p>
+            </a>
+            <a>
+              <span>02.</span>
+              <p>Fatores comportamentais</p>
+            </a>
+            <a>
+              <span>03.</span>
+              <p>Fatores psicossociais</p>
+            </a>
+            <a>
+              <span>04.</span>
+              <p>Morbidade</p>
+            </a>
+            <a>
+              <span>05.</span>
+              <p>Percepção de saúde e autocuidado</p>
+            </a>
+            <a class="header-active">
+              <span>06.</span>
+              <p>Produtividade</p>
+            </a>
+            <a>
+              <span>07.</span>
+              <p>Cultura de segurança</p>
+            </a>
+          </nav>
+        </header>
+  
+        <article class="page-productivity-4-gauger-wrapper">
+          <img src="https://raw.githubusercontent.com/felipe-html/sesi-images/main/gauger-100.png" />
+        </article>
+  
+        <article class="page-productivity-4-percent-wrapper">
+          <p>IPRO</p>
+          <h1>100</h1>
+        </article>
+  
+        <article class="page-productivity-4-national-average-wrapper">
+          <span>64</span>
+        </article>
+  
+        <footer class="footer">
+          <article class="footer-page-logo">
+            <img src="https://raw.githubusercontent.com/felipe-html/sesi-images/main/sesi-logo.png" />
+          </article>
+          <article class="footer-page-number" style="--color: #4D6680">
+            <span>29</span>
+          </article>
+        </footer>
+      </section>
 
       <section class="container page-safety-culture-1">
         <footer class="footer">
@@ -3657,6 +4628,103 @@
             <span>33</span>
           </article>
         </footer>
+      </section>
+
+      <section class="container page-safety-culture-5">
+        <header class="header">
+          <nav>
+            <a href="#page-demographic">
+              <span>01.</span>
+              <p>Demográfica</p>
+            </a>
+            <a>
+              <span>02.</span>
+              <p>Fatores comportamentais</p>
+            </a>
+            <a>
+              <span>03.</span>
+              <p>Fatores psicossociais</p>
+            </a>
+            <a>
+              <span>04.</span>
+              <p>Morbidade</p>
+            </a>
+            <a>
+              <span>05.</span>
+              <p>Percepção de saúde e autocuidado</p>
+            </a>
+            <a class="header-active">
+              <span>06.</span>
+              <p>Produtividade</p>
+            </a>
+            <a>
+              <span>07.</span>
+              <p>Cultura de segurança</p>
+            </a>
+          </nav>
+        </header>
+  
+        <article class="page-safety-culture-5-gauger-wrapper">
+          <img src="https://raw.githubusercontent.com/felipe-html/sesi-images/main/gauger-100.png" />
+        </article>
+  
+        <article class="page-safety-culture-5-percent-wrapper">
+          <p>IPRO</p>
+          <h1>40</h1>
+        </article>
+  
+        <article class="page-safety-culture-5-national-average-wrapper">
+          <span>64</span>
+        </article>
+  
+        <footer class="footer">
+          <article class="footer-page-logo">
+            <img src="https://raw.githubusercontent.com/felipe-html/sesi-images/main/sesi-logo.png" />
+          </article>
+          <article class="footer-page-number" style="--color: #4D6680">
+            <span>34</span>
+          </article>
+        </footer>
+      </section>
+
+      <section class="container page-final">
+        <header class="header">
+          <nav>
+            <a href="#page-demographic">
+              <span>01.</span>
+              <p>Demográfica</p>
+            </a>
+            <a class="header-active">
+              <span>02.</span>
+              <p>Fatores comportamentais</p>
+            </a>
+            <a>
+              <span>03.</span>
+              <p>Fatores psicossociais</p>
+            </a>
+            <a>
+              <span>04.</span>
+              <p>Morbidade</p>
+            </a>
+            <a>
+              <span>05.</span>
+              <p>Percepção de saúde e autocuidado</p>
+            </a>
+            <a>
+              <span>06.</span>
+              <p>Produtividade</p>
+            </a>
+            <a>
+              <span>07.</span>
+              <p>Cultura de segurança</p>
+            </a>
+          </nav>
+        </header>
+        <article class="page-final-content">
+            <p>Av. Nome da avenida, 1000 - CEP 10800-090</p>
+            <p>Bairro | Cidade | Estado</p>
+            <p>www.asstisesi.com.br</p>
+        </article>
       </section>
     </main>
   </body>

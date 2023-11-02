@@ -8,13 +8,18 @@
   },
   "author": "Felipe",
   "license": "ISC",
+  "engines": {
+    "node": "^14"
+  },
   "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
     "cors": "^2.8.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "puppeteer": "^21.4.1"
+    "puppeteer-core": "^10.1.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "puppeteer": "^10.1.1"
   }
 }
